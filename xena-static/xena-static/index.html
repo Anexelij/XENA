@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Elijah Adebayo Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700&display=swap">
+<script>try { if (localStorage.getItem("xena-theme") === "alt") document.documentElement.setAttribute("data-theme", "alt"); } catch (e) {}</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="loader" aria-hidden="true"><div class="lw"><span style="--i:0">X</span><span style="--i:1">E</span><span style="--i:2">N</span><span style="--i:3">A</span></div><div class="lb"><i></i><b id="lpct">0%</b></div></div>
+<div id="progress"></div>
+<div id="cur-ring"><span></span></div><div id="cur-dot"></div>
+<header class="nav">
+  <div class="bar">
+    <span></span>
+    <a class="logo roll glass" href="#" data-route="home" aria-label="Xena, home">XENA</a>
+    <button id="menuBtn" class="mbtn glass" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+  </div>
+</header>
+<div id="menu" aria-hidden="true">
+  <div class="mcols"><ul>
+    <li><a href="#" data-route="home" style="--i:0">Home</a></li>
+    <li><a href="#work" data-route="work" style="--i:1">Work</a></li>
+    <li><a href="#about" data-route="about" style="--i:2">About</a></li>
+    <li><a href="#contact" data-route="contact" style="--i:3">Contact</a></li>
+  </ul><div class="mimg"><img src="menu.webp" alt=""></div></div>
+  <div class="theme-row"><span>Colour variant</span><button type="button" id="themeBtn" class="tswitch" role="switch" aria-checked="false" aria-label="Toggle alternate colour variant"><b id="themeLbl">Orange</b><i></i></button></div>
+  <div class="menu-foot"><a href="mailto:xena.grafix@gmail.com" target="_blank" rel="noopener noreferrer">xena.grafix@gmail.com</a><div class="socials" data-socials></div></div>
+</div>
+
+<main id="view"></main>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="tWhite" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0"/></filter><filter id="tAccent" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 .482  0 0 0 0 .361  0 0 0 0 1  0 0 0 1 0"/></filter><filter id="tOrange" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 .416  0 0 0 0 .169  0 0 0 1 0"/></filter></svg>
+<div id="xprev"></div>
+<div id="pv" role="dialog" aria-modal="true" aria-label="Project preview"><button class="btn sm light x" type="button" data-close>Close</button><div class="box"><div class="pic"></div><div class="info"></div></div></div>
+
+<footer class="dark">
+  <div class="wrap">
+    <div>
+      <p class="big">Let's create something memorable.</p>
+      <div class="contact-links"><a href="mailto:xena.grafix@gmail.com" target="_blank" rel="noopener noreferrer">xena.grafix@gmail.com</a><a href="https://wa.me/2349024878403" target="_blank" rel="noopener noreferrer">WhatsApp +234 902 487 8403</a></div>
+    </div>
+    <div class="socials" data-socials></div>
+  </div>
+  <div class="wrap logo-row"><div class="wordmark" role="img" aria-label="XENA"><span aria-hidden="true">X</span><span aria-hidden="true">E</span><span aria-hidden="true">N</span><span aria-hidden="true">A</span></div></div>
+  <p class="copy">&copy; 2026 Elijah Adebayo. All rights reserved.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
