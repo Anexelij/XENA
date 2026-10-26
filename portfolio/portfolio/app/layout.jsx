@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Anton, Barlow_Condensed } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Cursor from "@/components/Cursor";
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <PageTransition>{children}</PageTransition>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
